@@ -4,10 +4,9 @@ cd .
 
 git add .
 
-DATE=$(date)
+DATE=$(date +%d/%B/%Y)
+TIME=$(date +%T)
 
-git commit -m "changes made on $DATE"
+git commit -m "changes made on $DATE $TIME"
 
 git push
-
-osascript -e 'dispaly notification "pushed to remote" with title "SUCCESS"'

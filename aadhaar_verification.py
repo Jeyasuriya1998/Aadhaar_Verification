@@ -103,7 +103,6 @@ def final_merging(img, pdf_valid_dir):
     img_merge.save(pdf_valid_dir)
     
         
-
 def home(aadhaar_details):
     driver = webdriver.Chrome(service=ser, options=op)
     driver.set_window_size(1082, 744)
