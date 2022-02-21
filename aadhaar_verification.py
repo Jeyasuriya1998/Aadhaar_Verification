@@ -101,8 +101,7 @@ def final_merging(img, pdf_valid_dir):
 
         y += img.height
     img_merge.save(pdf_valid_dir)
-    # print("img merge")
-#     display(img_merge)
+    
         
 
 def home(aadhaar_details):
