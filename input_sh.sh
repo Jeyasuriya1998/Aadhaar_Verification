@@ -32,6 +32,8 @@ else
     
 fi
 
+
+
 # echo "Do you want to configure the Global User and Email ?"
 # select yn in "Yes" "No"; do 
 #     case $yn in
