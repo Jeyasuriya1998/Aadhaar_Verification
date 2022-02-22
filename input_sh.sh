@@ -8,7 +8,7 @@
 
 user=$(git config user.name)
 echo $user
-if [ $user ];
+if test $user -ge 3;
 then
     echo "User is available"
 else
