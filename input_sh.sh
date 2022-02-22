@@ -6,14 +6,9 @@
 # read email
 # git config --global user.email "$email"
 
-user=$(git config user.name)
-echo $user
-if test $user -ge 3;
-then
-    echo "User is available"
-else
-    echo "Please Enter the user name"
-fi
+var=$(git config user.name)
+echo $var
+if [ -z ${var} ]; then echo "var is unset"; else echo "var is set to '$var'"; fi
 
 echo "Do you want to configure the Global User and Email ?"
 select yn in "Yes" "No"; do 
