@@ -8,6 +8,13 @@
 
 user=$(git config user.name)
 echo $user
+if [$user]
+then
+    echo "User is available"
+else
+    echo "Please Enter the user name"
+fi
+
 echo "Do you want to configure the Global User and Email ?"
 select yn in "Yes" "No"; do 
     case $yn in
