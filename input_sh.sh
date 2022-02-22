@@ -15,7 +15,6 @@ then
     TIME=$(date +%T)
     git commit -m "changes made on $DATE $TIME"
     git push
-
 else
     echo "Enter Your name : "
     read name
