@@ -8,7 +8,7 @@
 
 user=$(git config user.name)
 echo $user
-if [ $user ]
+if [ $user ];
 then
     echo "User is available"
 else
