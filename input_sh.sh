@@ -1,10 +1,13 @@
 #!/bin/bash
-echo "Enter Your Username :"
-read name
-git config --global user.name "$name"
-echo "Enter Your Email Address : "
-read email
-git config --global user.email "$email"
+# echo "Enter Your Username :"
+# read name
+# git config --global user.name "$name"
+# echo "Enter Your Email Address : "
+# read email
+# git config --global user.email "$email"
+
+user = $(git config user.name)
+echo "$user"
 echo "Do you want to configure the Global User and Email ?"
 select yn in "Yes" "No"; do 
     case $yn in
