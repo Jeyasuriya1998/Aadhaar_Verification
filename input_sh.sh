@@ -1,4 +1,10 @@
 #!/bin/bash
+echo "Enter Your Username :"
+read name
+git config --global user.name "$name"
+echo "Enter Your Email Address : "
+read email
+git config --global user.email "$email"
 echo "Do you want to configure the Global User and Email ?"
 select yn in "Yes" "No"; do 
     case $yn in
@@ -29,3 +35,11 @@ select yn in "Yes" "No"; do
     esac
 done
 
+git add .
+
+DATE=$(date +%d/%B/%Y)
+TIME=$(date +%T)
+
+git commit -m "changes made on $DATE $TIME"
+
+git push

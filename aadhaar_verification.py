@@ -24,7 +24,6 @@ warnings.filterwarnings('ignore')
 # selenium_url = 'http://ec2-65-0-140-243.ap-south-1.compute.amazonaws.com:4444/wd/hub'
 
 # driver = webdriver.Remote(selenium_url, options=options)
-
 # path = os.path.abspath(os.path.join('driver',"chromedriver.exe"))
 
 def resource_path(relative_path):
