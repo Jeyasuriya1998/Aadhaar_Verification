@@ -74,6 +74,7 @@ def read_captcha(data, Image_captcha_dir):
 #     print(captcha) 
     return captcha
 
+
 def final_merging(img, pdf_valid_dir):
     # images_list = [os.path.abspath(os.path.join('assets','digi.jpg')), img,\
     #                os.path.abspath(os.path.join('assets','add.jpg'))]
